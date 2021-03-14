@@ -17,17 +17,6 @@ What data will we need to work with e.g. variables, reference data like monster 
 ## Logic
 How will the application actually work?
 
-'''python
-def roll_dice(times, sides, bonus):
-  dice_results = []
-  for roll in times:
-    dice_results.append(random.randomint(1,sides))
-
-  total = sum(dice_results) + bonus
-  result = f"{times}d{sides} = {dice_results}" plus {bonus} = total"
-  return result, total
-'''
-
     def roll_dice(times, sides, bonus):
       dice_results = []
       for roll in times:
