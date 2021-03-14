@@ -28,11 +28,11 @@ def roll_dice(times, sides, bonus):
   return result, total
 '''
 
-  def roll_dice(times, sides, bonus):
-    dice_results = []
-    for roll in times:
-      dice_results.append(random.randomint(1,sides))
+    def roll_dice(times, sides, bonus):
+      dice_results = []
+      for roll in times:
+        dice_results.append(random.randomint(1,sides))
 
-    total = sum(dice_results) + bonus
-    result = f"{times}d{sides} = {dice_results}" plus {bonus} = total"
-    return result, total
+      total = sum(dice_results) + bonus
+      result = f"{times}d{sides} = {dice_results}" plus {bonus} = total"
+      return result, total
