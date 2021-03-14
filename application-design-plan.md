@@ -1,7 +1,7 @@
 # Lets plan this application!
 
-Requirements
+## Requirements
 
-Data
+## Data
 
-Logic
+## Logic
