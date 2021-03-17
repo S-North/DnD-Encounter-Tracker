@@ -1,17 +1,22 @@
 # Lets plan this application!
 ## Outline
-What's it going to do?
+As first, just what is necessary to track a single encounter e.g. add allies and enemies to a combat. Roll initiative, keep track of turns and rounds, roll for attack, keep track of damage/hp.
 ## Features
-We'll do it in stage
 ### Stage 1
-* Feature 1
-* Feature 2
-* Feature 3
-* Feature 4
-  * Sub feature 1
-  * Sub feature 2
-  * Sub feature 3
-  * Sub feature 4
+* a terminal based application that can run on Windows, MacOS and Linux
+* Create 1 or more encounters/combats
+* Add enemies and allies to the combat
+* roll initiative
+* Keep track of rounds and turns
+* Roll attacks
+* Keep track of HP
+
+### Stage 2
+* Turn it into a GUI app (web/desktop)
+
+### Stage 3
+* character generation
+* condition tracking
 ## Data
 What data will we need to work with e.g. variables, reference data like monster stat blocks, etc.
 ## Logic
