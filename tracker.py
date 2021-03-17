@@ -1,11 +1,5 @@
 import random, sys
 
-# partipant1hp = 45
-# partipant1ac = 2
-# partipant1attack1 = 1
-# partipant1damage = (1,6,2)
-
-
 class participant():
     def __init__(self, name, hp, ac, attack, damage, initiative, str, dex, con, wis, int, cha):
         self.name = name
