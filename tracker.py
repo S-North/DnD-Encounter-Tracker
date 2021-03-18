@@ -1,7 +1,9 @@
 import random  # we need this for all the random stuff we're going to do
+import pprint
+pp = pprint.PrettyPrinter(indent=4)  # this just prints out data in a nicely formatted way
 
 class person():  # create a class so we can create people objects with all the properties we need
-    def __init__(self, name, str, dex, con, wis, int, cha, hp, ac, attack, damage, cr=None, initiative=None):
+    def __init__(self, name, str, dex, con, wis, int, cha, hp, ac, attack, damage, cr=None, initiative=None, traits=None, actions=None):
         self.name = name
         self.hp = hp
         self.ac = ac
@@ -15,6 +17,8 @@ class person():  # create a class so we can create people objects with all the p
         self.wis = wis
         self.cha = cha
         self.cr = cr
+        self.traits = traits
+        self.actions = actions
 
     def __str__(self):
         return self.name
@@ -39,6 +43,13 @@ person5.name = "Alan" # play around with changing the properties of some of the 
 person4.hp = person4.hp - 10
 person8 = person("Raskas",      16, 14, 16, 10, 10, 11,    31, 19, 1, (1,10))  # create another person
 persons.append(person8)  # add them to the list
+person1.damage = (2,4)
+person5.actions = []
+person5.actions.append({        "name": "short sword",
+                                "description": "Melee weapon",
+                                "damage": (1,6),
+                                "damage type": "slashing":
+                                "range": "5 feet"})
 
 for person in persons:  # loop over all the people in the list
     init_roll = random.randint(1, 20)  # roll initiative for each one
@@ -49,4 +60,6 @@ for person in persons:  # loop over all the people in the list
 persons.sort(key=lambda x: x.initiative, reverse=True)  # sort the list into revese initiative order (using a highly confusing lambda function)
 
 for person in persons:  # loop over everything again to print out stuff
-    print(f"Initiative = {person.initiative}".ljust(17), f"{person.name}".ljust(16), f"HP: {person.hp}, ".ljust(10), f"AC: {person.ac}".ljust(10), f"Challenge = {person.cr}")
+    print(f"Initiative = {person.initiative}".ljust(17), f"{person.name}".ljust(16), f"HP: {person.hp}, ".ljust(10), f"AC: {person.ac}".ljust(10), f"Challenge = {person.cr}".ljust(6), f"Damage: {person.damage}".ljust(30))
+
+pp.pprint(person5.actions[0])
