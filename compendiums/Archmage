@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5">
+  <monster version="5">
+    <name>Archmage</name>
+    <type>humanoid (any race), monster manual</type>
+    <alignment>any alignment</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>99 (18d8+18)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>20</int>
+    <wis>15</wis>
+    <cha>16</cha>
+    <save>Intelligence 9</save>
+    <save>Wisdom 6</save>
+    <skill>Arcana 13</skill>
+    <skill>History 13</skill>
+    <resist>damage from spells; non magical bludgeoning, piercing, and slashing (from stoneskin)</resist>
+    <passive>12</passive>
+    <languages>any six languages</languages>
+    <cr>12</cr>
+    <slots>4,3,3,3,3,1,1,1,1,</slots>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The archmage has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast disguise self and invisibility at will and has the following wizard spells prepared:
+            • Cantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp
+            • 1st level (4 slots): detect magic, identify, mage armor*, magic missile
+            • 2nd level (3 slots): detect thoughts, mirror image, misty step
+            • 3rd level (3 slots): counterspell,fly, lightning bolt
+            • 4th level (3 slots): banishment, fire shield, stoneskin*
+            • 5th level (3 slots): cone of cold, scrying, wall of force
+            • 6th level (1 slot): globe of invulnerability
+            • 7th level (1 slot): teleport
+            • 8th level (1 slot): mind blank*
+            • 9th level (1 slot): time stop
+            * The archmage casts these spells on itself before combat.</text>
+    </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|6|1d4+2</attack>
+    </action>
+    <action name="r we rert ert e">
+      <name>Light Crossbow</name>
+      <text>Ranged Weapon Attack: +6 to hit, reach 60 ft. One target. Hit: 5 (1d6 + 2) piercing damage.</text>
+      <attack>Dagger|5|1d6+2</attack>
+    </action>
+    <spells>Fire Bolt, Light, Mage Hand, Prestidigitation, Shocking Grasp, Detect Magic, Identify, Mage Armor, Magic Missile, Detect Thoughts, Mirror Image, Misty Step, Counterspell, Fly, Lightning Bolt, Banishment, Fire Shield, Stoneskin, Cone of Cold, Scrying, Wall of Force, Globe of Invulnerability, Teleport, Mind Blank, Time Stop</spells>
+    <environment>Urban</environment>
+  </monster>
+</compendium>

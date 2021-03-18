@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5">
+  <monster>
+    <name>Sherlock, Elven Mage</name>
+    <alignment>Chaotic Good</alignment>
+    <ac>13</ac>
+    <hp>20 (3d6)</hp>
+    <speed>30</speed>
+    <init>3</init>
+    <str>8</str>
+    <dex>17</dex>
+    <con>14</con>
+    <int>16</int>
+    <wis>8</wis>
+    <cha>9</cha>
+    <save>Strength -1</save>
+    <save>Dexterity 3</save>
+    <save>Constitution 2</save>
+    <save>Intelligence 5</save>
+    <save>Wisdom 1</save>
+    <save>Charisma -1</save>
+    <skill>Acrobatics 3</skill>
+    <skill>Animal Handling -1</skill>
+    <senses>Darkvision 60&#39;</senses>
+    <passive>11</passive>
+    <languages>Common, Elven, Dwarfish, Gnome</languages>
+    <cr>3</cr>
+    <slots>4,2,0,0,0,0,0,0,0,</slots>
+    <trait>
+      <name>Arcane Recovery</name>
+      <text>Recover 1 spell level per 2 character levels on a short rest.</text>
+      <recharge>LONG</recharge>
+    </trait>
+    <spells>Charm Person, Comprehend Languages, Disguise Self, Find Familiar, Fire Bolt, Hideous Laughter, Identify, Light, Mage Hand, Message, Web</spells>
+  </monster>
+</compendium>

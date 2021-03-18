@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5">
+  <monster>
+    <name>Stealth Killer, Half-Elf Rogue</name>
+    <alignment>Chaotic Good</alignment>
+    <ac>15</ac>
+    <hp>26 (3d8)</hp>
+    <speed>30</speed>
+    <init>3</init>
+    <str>10</str>
+    <dex>16</dex>
+    <con>14</con>
+    <int>13</int>
+    <wis>10</wis>
+    <cha>14</cha>
+    <save>Wisdom 0</save>
+    <senses>Darkvision 60&#39;</senses>
+    <passive>12</passive>
+    <languages>Common, Elvish, Dwarf, Orc, Thrives Cant</languages>
+    <cr>3</cr>
+    <action>
+      <name>Attacks</name>
+      <text>Melee and ranged attacks</text>
+      <attack>Shortbow|5|1d6+3</attack>
+      <attack>Short Sword|5|1d6+3</attack>
+      <attack>Dagger|5|4+3</attack>
+    </action>
+    <action>
+      <name>Sneak Attack</name>
+      <text>Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+
+You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.
+
+The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.</text>
+      <attack>Sneak|0|1d6</attack>
+    </action>
+    <action>
+      <name>Cunning Action</name>
+      <text>Your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</text>
+    </action>
+  </monster>
+</compendium>
