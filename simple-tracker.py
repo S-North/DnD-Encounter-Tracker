@@ -8,8 +8,7 @@ def ability_modifier(ability_score):  # pass this function an ability score and 
     else:
         # dict = {"1": -5, "2": -4, "3": -4, "4": -3, "5": -3, "6": -2, "7": -2, "8": -1, "9": -1}  # had to fudge this as I couldn't find a good calculation
         # return dict[str(ability_score)]
-        print (ability_score - 11)
-        return - int(abs((ability_score -11) / 2))  #  haha, found a calculation for this after all :) -11 turns [1:9] into [-10:-2], convert to positive numbers [10:2], divide by 2, (int() rounds down), minus sign (-) turns the positive numbers back into negative ones
+        return - int(abs((ability_score -11) / 2))  #  haha, found a calculation for this after all :) -11 turns [1:9] into [-10:-2], abs() converts to positive numbers [10:2], divide by 2, int() rounds down, minus sign (-) turns the positive numbers back into negative ones
 
 
 person1 = {"name": "Polydeuces", "class": "Ranger", "level": 3, "str": 13, "dex": 16, "con": 14, "int": 8, "wis": 15, "cha": 8, "hp": 32, "ac": 15, "initiative": None}
@@ -25,11 +24,8 @@ for person in combat:
     initiative_roll = random.randint(1,20)
     modifier = ability_modifier(person["dex"])
     person["initiative"] = initiative_roll + modifier
-    print (f"{person['name']} rolled {initiative_roll} + {modifier} = {person['initiative']}")
+    print (f"{person['name']:10} rolled", f"{initiative_roll:3} + {modifier:>2} = {person['initiative']}")
 
 combat.sort(key=lambda x: x["initiative"], reverse=True)  # sort the list using a list comprehension. don't worry if this looks like gibberish, i'll explain
 
 pp.pprint(combat)
-
-for i in range(1,21):
-    print(f"score {i} = modifier {ability_modifier(i)}")
