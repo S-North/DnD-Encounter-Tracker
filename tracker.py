@@ -48,8 +48,14 @@ person5.actions = []
 person5.actions.append({        "name": "short sword",
                                 "description": "Melee weapon",
                                 "damage": (1,6),
-                                "damage type": "slashing":
+                                "damage type": "slashing",
                                 "range": "5 feet"})
+
+person5.actions.append({        "name": "psychic blade",
+                                "description": "ranged psychic attack",
+                                "damage": (1,6),
+                                "damage type": "psychic",
+                                "range": "60"})
 
 for person in persons:  # loop over all the people in the list
     init_roll = random.randint(1, 20)  # roll initiative for each one
@@ -63,3 +69,5 @@ for person in persons:  # loop over everything again to print out stuff
     print(f"Initiative = {person.initiative}".ljust(17), f"{person.name}".ljust(16), f"HP: {person.hp}, ".ljust(10), f"AC: {person.ac}".ljust(10), f"Challenge = {person.cr}".ljust(6), f"Damage: {person.damage}".ljust(30))
 
 pp.pprint(person5.actions[0])
+for action in person5.actions:
+    pp.pprint(action["name"])
